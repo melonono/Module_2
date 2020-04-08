@@ -17,10 +17,21 @@ console.log(calcAge(2020));
 
 //Request a distance in kilometers between the two cities from a user, and the time they want to cover it within. Count the speed needed to be on time.
 
+let number = prompt ("Type in your starting destination");
+let number = prompt ("Type in your final destination");
+let hours: 
+
 //Create a simple currency converter. A user types in USD and the program converts them to EUR. The exchange rate should be stored as a constant. Then display the result in the console.
 
-//A user types in the values of a and b for the formula a * x + b = 0 . The program has to calculate the x and display it in the console.
+let Currency = prompt(" Convert USD to EUR. Type amount", 1);
+function calcEURO (currentExchange) {
+    return currentExchange * Currency;
+}
+const currentExchange = 0.93;
 
+console.log (calcEURO (0.93) );
+
+// Calculate the x and display it in the console.  x = (0 - a * b ) / a; 
 
 
 

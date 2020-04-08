@@ -40,48 +40,45 @@ if (number == 0){
 
 //Ask a user 3 questions, each with 3 answer options. Write these options also in the prompt window, after a question. The user gets 2 points for each correct answer. Show the earned points after the test.
 
-let answer1 = prompt (" How many big oceans are there? 4, 3 or 2?");
-let answer2 = prompt ("What is a tomato? a banana, a fruit or a vegteble?")
+let answer1 = prompt (" How many big oceans are there? 5, 4 or 2?");
+let answer2 = prompt ("What is a tomato? a banana, a fruit or a vegteble?");
+let answer3 = prompt ("How many planets are there in our solarsystem? 10, 7 or 8");
+let points = 0; 
 
+if (answer1 == "5"){
+  points += 2;
+}
+
+if (answer2 == "a fruit"){
+  points += 2
+}
+if (answer2 == "8"){
+  points += 2;
+}
+
+console.log(`You're total score is ${points} points!`);
 
 //Request a number from a user, and define whether it is positive, negative, or zero. Display a resulting message as an alert.
 
+let number2 = +prompt('Type whatever number you like');
+
+if (number2 > 0) {
+  alert('This number is positive');
+} else if (number2 < 0) {
+  alert('This number is negative');
+} else {
+  alert('The number is zero');
+}
+
 //Request a user’s age and check whether it is realistic (0-120 y.o.). If it is realistic, display a message ‘Hi! You are # years old’, otherwise – ‘Hm… Is it even possible?
 
-//difference between condtions and loops IS loops help you to do taskt repeatedly without having to write it out your self. Also you can write conditions inside loops. 
+let age2 = +prompt('How old are you?');
 
-
-// One task to do using switch:
-// Request a number of a month from a user. Print the name of the month to the webpage as a paragraph using document.write().
-
-
-
-// One task using while loop:
-// Request a number and an extent. Raise the number to the given power and display the result. Do not use ** or Math.pow() here.
-
-// One task using do while loop:
-// Suggest a user solve 2 + 2 * 2 until he/she does it right.
-
-// And one task using for loop:
-// Count sheep. Request a non-negative integer, 3 for example, and print a string with a murmur: “1 sheep...2 sheep...3 sheep...” to the page using document.write(). If a user types a negative number in, alert an error.
-
-
-
-
-//prints only even numbers.
-// 10 % 2 === 0
-// 10/2 = 5
-
-/*
-for (let i = 0; i <10; i++) {
-  if(i % 2 ===0){  
-    console.log(i);
-  }
+if (age >= 0 && age >= 120) {
+  alert(`Hi! You are ${age2} years old`);
+} else {
+  alert('Maybe you\'re the oldest person on earth?... Or you\'re bending the truth a bit?');
 }
-*/
 
-// prints backwards from 50 to 1
-for (let i = 50; i > 0; i--){
-  console.log (i);
-}
+
 
