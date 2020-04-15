@@ -25,7 +25,7 @@ function removeVowels(string){
 };
   return vowelsRemoved;
 };
-console.log(removeVowels('the aliens are here'))
+console.log(removeVowels('the aliens are here'));
 
 // Write a function which repeats the given string exact number of times. For example, repeatString("Hello", 5) returns “HelloHelloHelloHelloHello”.
 
