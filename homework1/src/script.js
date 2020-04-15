@@ -37,3 +37,11 @@ console.log (calcEURO (0.93) );
 
 
 //Request current time from a user in format HH:mm (HH is hour in a day from 00 to 23, mm are minutes in hour) and display how many hours and minutes are left until tomorrow.
+
+
+let time = "23:40";
+time.split(':')[0];
+
+let hours = time.split(":")[0];
+let minutes = time.split(':')[1];
+
