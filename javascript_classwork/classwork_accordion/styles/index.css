@@ -1,0 +1,148 @@
+@import url(//db.onlinewebfonts.com/c/7d411bb0357d6fd29347455b7d207995?family=JF+Flat);
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.screen {
+  background-color: #F6704B;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  max-width: 100%;
+  min-height: 100px;
+  height: 100%;
+}
+
+.accordion__button {
+  display: flex;
+  align-items: center;
+  border: none;
+  color: #FFE9C1;
+  font-size: 24px;
+  background-color: #620808;
+  padding: 10px;
+  font-family: "JF Flat";
+}
+
+.accordion__content {
+  display: none;
+  overflow: auto;
+  background-color: #620808;
+  color: #FFE9C1;
+  font-size: 18px;
+  font-family: "JF Flat";
+  padding: 10px;
+}
+
+.accordion__button--music {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #A53F3F;
+  color: #F4CE74;
+  font-family: "JF Flat";
+  font-size: 24px;
+  padding: 10px;
+}
+
+.accordion__content--music {
+  display: none;
+  overflow: auto;
+  background-color: #A53F3F;
+  color: #F4CE74;
+  font-family: "JF Flat";
+  font-size: 18px;
+  padding: 10px;
+}
+
+.accordion__button--notes {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #F4CE74;
+  color: #620808;
+  font-family: "JF Flat";
+  font-size: 24px;
+  padding: 10px;
+}
+
+.accordion__content--notes {
+  display: none;
+  overflow: auto;
+  background-color: #F4CE74;
+  color: #620808;
+  font-family: "JF Flat";
+  font-size: 18px;
+  padding: 10px;
+}
+
+.accordion__button--books {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #FFE9C1;
+  color: #620808;
+  font-family: "JF Flat";
+  font-size: 24px;
+  padding: 10px;
+}
+
+.accordion__content--books {
+  display: none;
+  overflow: auto;
+  background-color: #FFE9C1;
+  color: #620808;
+  font-family: "JF Flat";
+  font-size: 18px;
+  padding: 10px;
+}
+
+.accordion__button--tendances {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #D5441C;
+  color: #FFE9C1;
+  font-family: "JF Flat";
+  font-size: 24px;
+  padding: 10px;
+}
+
+.accordion__content--tendances {
+  display: none;
+  overflow: auto;
+  background-color: #D5441C;
+  color: #FFE9C1;
+  font-family: "JF Flat";
+  font-size: 18px;
+  padding: 10px;
+}
+
+.img-size {
+  max-width: 20%;
+  height: auto;
+  margin-right: 40px;
+}
+
+/*# sourceMappingURL=index.css.map */
