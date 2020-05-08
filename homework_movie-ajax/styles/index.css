@@ -1,3 +1,12 @@
+.screen{
+  display: flex;
+	flex-direction: column;
+  width: 100%;
+	min-height: 100vh;
+	background-color: #00263b;
+
+}
+
 .movie-container{
   display: flex;
   justify-content: space-around;

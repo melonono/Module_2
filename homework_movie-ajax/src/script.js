@@ -1,18 +1,4 @@
 
-// $.ajax({url:'http://www.omdbapi.com/?apikey=ec932271&t=Jurassic Park'}).done((movies) => {
-//   console.log(movies)
-  
-//   // function displayMovie (movie){
-//   //   let title = document.createElement('div');
-
-//   //   displayMovie.appendChild(movie);
-//   // }
-
-//   // return displayMovie;
-
-// });
-
-
 $(document).ready(function(){
   $('#movieForm').submit(function(event){
     event.preventDefault()
@@ -23,13 +9,15 @@ $(document).ready(function(){
     let result = ""
     let resultTitle =""
 
+
     $.ajax({
       method: 'GET',
       url:url+"&t="+movie,
       success:function(data){
+        console.log('movie', movie)
         console.log(data)
         
-        if (data.Response = true){  //
+        if (data.Response === "True"){  // data.Respone är en sträng. True är en sträng. Så Boolean kollar om båda strings matchar varandra. Om inte så visar den 'No movie found'.
         result =`
         <img src="${data.Poster}"/>`
        
@@ -48,5 +36,3 @@ $(document).ready(function(){
     })
   })
 });
-
-
