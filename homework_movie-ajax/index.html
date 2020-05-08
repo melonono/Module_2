@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie search bar</title>
+</head>
+<body>
+  <div class="container">
+  <h1 class="text-center mt-5">Search for any movie!</h1>
+  <form id="movieForm" autocomplete="off" action="">
+    <div>
+      <label for="Movie">Movie Name</label>
+      <input class="form-control" type="text" id="movie" placeholder="Serch for a Movie Title" name="search"/>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-danger btn-block">Search</button>
+    </div>
+  </form>
+  <div id="result"></div>
+</div>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="src/script.js"></script>
+</body>
+</html>
