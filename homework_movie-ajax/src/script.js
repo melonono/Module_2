@@ -21,19 +21,30 @@ $(document).ready(function(){
     let url = ' http://www.omdbapi.com/?apikey=ec932271'
 
     let result = ""
+    let resultTitle =""
 
     $.ajax({
       method: 'GET',
       url:url+"&t="+movie,
       success:function(data){
         console.log(data)
-
-        result = `
-
+        if (data.Response ===true){  //
+        result =`
         <img src="${data.Poster}"/>`
+       
+        resultTitle = `
+        <h2>${data.Title}</h2>      
+        `;
 
         $("#result").html(result)
+        $("#resultTitle").html(resultTitle)
+
+        } else {                  //
+          document.write('<h2>No movie found</h2>')
+        }
       }
     })
   })
-})
+});
+
+
