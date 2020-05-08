@@ -28,7 +28,7 @@ $(document).ready(function(){
       url:url+"&t="+movie,
       success:function(data){
         console.log(data)
-        if (data.Response ===true){  //
+        if (data.Response === true){  //
         result =`
         <img src="${data.Poster}"/>`
        
@@ -40,7 +40,7 @@ $(document).ready(function(){
         $("#resultTitle").html(resultTitle)
 
         } else {                  //
-          document.write('<h2>No movie found</h2>')
+          document.write('<h2>No movie found</h2>');
         }
       }
     })
