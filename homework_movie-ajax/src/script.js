@@ -18,12 +18,17 @@ $(document).ready(function(){
         console.log(data)
         
         if (data.Response === "True"){  // data.Respone är en sträng. True är en sträng. Så Boolean kollar om båda strings matchar varandra. Om inte så visar den 'No movie found'.
+
         result =`
         <img src="${data.Poster}"/>`
        
         resultTitle = `
-        <h2>${data.Title}</h2>      
-        `;
+        <h2>Title: ${data.Title}</h2> 
+        <p>Plot: ${data.Plot}</p>     
+        <p>Director: ${data.Director}</p>
+        <p>Relese Date: ${data.Relesed}</p>
+        `
+       ;
 
         $("#result").html(result)
         $("#resultTitle").html(resultTitle)
