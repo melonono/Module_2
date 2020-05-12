@@ -34,7 +34,12 @@ $(document).ready(function(){
         $("#resultTitle").html(resultTitle)
 
         } else {                  // 
-          document.write('<h2>No movie found</h2>');
+           resultTitle =`<h2> No movie by that title found<h2>`;
+           result =` <img src="${data.Poster}"/>`;
+
+           $("#result").html(result)
+           $("#resultTitle").html(resultTitle)
+          // document.write('<h2>No movie found</h2>');
         }
         return data.Response;
       }
